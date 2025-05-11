@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title_Name</title>
+    <!-- ========== All Css Link Here ===== -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ===== responsive css  -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- ========== Header Area Start Here ==========  -->
+    <!-- Top bar -->
+    <div class="top-bar">
+        <img src="images/icons/delivery_truck_speed.svg" alt="icons"> 2000 TL üzeri alışverişlerde ücretsiz kargo
+        fırsatı!
+    </div>
+
+    <!-- Desktop Header -->
+    <div class="desktop-header container-fluid pt-2 px-5">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a href="#" class="d-grid d_menu"><img src="images/icons/menu.svg" alt="icons"> Menü</a>
+            </div>
+            <div class="col-auto logo">
+                <!-- ===== Site Logo here  -->
+                <a href="#"><img class="web_page_logo" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="col search-box">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ürün veya marka arayın...">
+                    <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="col-auto d-flex gap-3 ms-5 header_menu_icons">
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    <small>S.S.S.</small>
+                </a>
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <small>Bize Ulaşın</small>
+                </a>
+
+                <div class="nav-icon-wrapper position-relative">
+                    <a href="#" class="nav-icon">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <small>Hesabım</small>
+                    </a>
+                    <div class="account_hover_manu position-absolute">
+                        <div class="hover_menu_arrow_up"></div>
+                        <a href="#">Üye Ol / Giriş Yap</a>
+                        <p class="mt-2">Hesabınız yok mu? <a href="#">Kayıt olun</a></p>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <small>Sepetim</small>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="desktop_bottom_menu">
+        <nav class="navbar navbar-expand-lg pt-0">
+            <div class="container-fluid pb-2 px-5">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <i class="fa fa-times manu_close" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategoriler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Menu One</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Four</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Markalar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Menu One</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Four</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kampanyalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İndirimli Ürünler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Çok Satanlar</a>
+                        </li>
+                        <li class="nav-item offer_menu position-relative">
+                            <a class="nav-link" href="#">Outlet</a>
+                            <img src="images/icons/present.svg" alt="icons">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="logo mobile_logo">
+            <!-- ===== Mobile Logo  -->
+            <img src="images/mobile_logo.png" alt="logo">
+        </div>
+        <div class="nav-icon-wrapper mobile_account position-relative" id="mobileAccount">
+            <a href="#" class="nav-icon">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <small>Hesabım</small>
+            </a>
+            <div class="account_hover_manu position-absolute">
+                <div class="hover_menu_arrow_up"></div>
+                <a href="#">Üye Ol / Giriş Yap</a>
+                <p class="mt-2">Hesabınız yok mu? <a href="#">Kayıt olun</a></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="mobile-header p-2">
+        <div class="search-box w-100">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Ürün veya marka arayın...">
+                <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Header Area End Here ==========  -->
+
+    <!-- ========== Banner / Hero Area Start Here ==========  -->
+     <section id="banner_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lf-12">
+                    <div class="banner_area_class">
+                        <div class="banner_slider_main">
+                            <div class="banner_slider_items">
+                                <div class="banner_overlay_text">
+                                    <h1>Haftanın Fırsatları</h1>
+                                    <a href="#"> İNDİRİMLERİ KEŞFET!</a>
+                                </div>
+                                <div class="banner_image_area">
+                                    <img src="images/banner/hero_image_one.png" alt="image" class="banner_image">
+                                </div>
+                            </div>
+                            <div class="banner_slider_items">
+                                <div class="banner_overlay_text">
+                                    <h1>Slider Two</h1>
+                                    <a href="#"> İNDİRİMLERİ KEŞFET!</a>
+                                </div>
+                                <div class="banner_image_area">
+                                    <img src="images/banner/hero_image_one.png" alt="image" class="banner_image">
+                                </div>
+                            </div>
+                            <div class="banner_slider_items">
+                                <div class="banner_overlay_text">
+                                    <h1>Slider Three</h1>
+                                    <a href="#"> İNDİRİMLERİ KEŞFET!</a>
+                                </div>
+                                <div class="banner_image_area">
+                                    <img src="images/banner/hero_image_one.png" alt="image" class="banner_image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- ========== Banner / Hero Area End Here ==========  -->
+
+    <!-- ========== Categories, Brand , Products  Area Start Here ==========  -->
+     <section id="category_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="tab_manu">
+                        <a href="#">Kategoriler</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="tab_manu">
+                        <a href="#">Markalar</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="tab_manu">
+                        <a href="#">Kampanyalar</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="tab_manu">
+                        <a href="#">İndirimli Ürünler</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="tab_manu">
+                        <a href="#">Çok Satanlar</a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="tab_manu offer_button position-relative">
+                        <div class="my_icon"></div>
+                        <a href="#">% Outlet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="products_card position-relative">
+                        <img src="images/products/products_one.png" alt="products">
+                        <h3 class="products_name">WOODPECKER</h3>
+                        <p class="mb-0">Q7 Plasma Air Purifier</p>
+                        <p class="mb-2">&nbsp;</p>
+                        <a href="#">Giriş Yap</a>
+                        <p class="status_product green_color">Kampanya</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="products_card position-relative">
+                        <img src="images/products/product_two.png" alt="products">
+                        <h3 class="products_name">W&H</h3>
+                        <p class="mb-0">Synea Fusion Tg-97</p>
+                        <p class="mb-2">Seramik Rulmanlı Aeratör (Işıksız)</p>
+                        <a href="#">Giriş Yap</a>
+                        <p class="status_product red_color">Outlet</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="products_card position-relative">
+                        <img src="images/products/product_three.png" alt="products">
+                        <h3 class="products_name">KULZER</h3>
+                        <p class="mb-0">Variotime Dynamix Putty (2x380 ml)</p>
+                        <p class="mb-2">&nbsp;</p>
+                        <a href="#">Giriş Yap</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="products_card position-relative">
+                        <img src="images/products/product_four.png" alt="products">
+                        <h3 class="products_name">TPC</h3>
+                        <p class="mb-0">Amalgamatör</p>
+                        <p class="mb-2">&nbsp;</p>
+                        <a href="#">Giriş Yap</a>
+                        <p class="status_product green_color">Kampanya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- ========== Categories, Brand , Products  Area End Here ==========  -->
+
+    <!-- ========== popular categories Area Start Here ==========  -->
+<section id="popular_categories_area">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h3 class="popular_category_title">POPÜLER KATEGORİLER</h3>
+        </div>
+      </div>
+      <div class="scrolling-wrapper d-flex flex-nowrap justify-content-between gap-2 gap-lg-0">
+        <!-- Category Item -->
+        <div class="category-card">
+          <img src="images/popular_category/category_image_01.png" alt="EL ALETLERİ" class="img-fluid">
+          <p class="mt-2 fw-semibold small">EL ALETLERİ</p>
+        </div>
+        <div class="category-card">
+          <img src="images/popular_category/category_image_02.png" alt="RESTORATİF" class="img-fluid">
+          <p class="mt-2 fw-semibold small">RESTORATİF</p>
+        </div>
+        <div class="category-card">
+          <img src="images/popular_category/category_image_03.png" alt="ENDODONTİ" class="img-fluid">
+          <p class="mt-2 fw-semibold small">ENDODONTİ</p>
+        </div>
+        <div class="category-card">
+          <img src="images/popular_category/category_image_04.png" alt="BEYAZLATMA" class="img-fluid">
+          <p class="mt-2 fw-semibold small">BEYAZLATMA</p>
+        </div>
+        <div class="category-card">
+          <img src="images/popular_category/category_image_05.png" alt="PROTETİK" class="img-fluid">
+          <p class="mt-2 fw-semibold small">PROTETİK</p>
+        </div>
+        <div class="category-card">
+          <img src="images/popular_category/category_image_06.png" alt="SARF MALZEME" class="img-fluid">
+          <p class="mt-2 fw-semibold small">SARF MALZEME</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== popular categories Area End Here ==========  -->
+
+  <!-- ========== Main Product Section One Area Start Here ==========  -->
+   <section id="main_products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="left_side_products position-relative">
+                    <img width="100%" src="images/main_product_one/left_side_product_image.png" alt="image">
+                    <div class="products_name_overlay">
+                        <h3>Endodonti <br>
+                            Ürünleri</h3>
+                        <a class="mt-5" href="#">İNCELE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="right_more_products">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_01.png" alt="products">
+                                <h3 class="products_name">META BIOMED</h3>
+                                <p class="mb-0">Ceraseal Bioceramic Esasli</p>
+                                <p class="mb-2">Kanal Dolgu Patı </p>
+                                <a href="#">Giriş Yap</a>
+                                <!-- <p class="status_product green_color">Kampanya</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_02.png" alt="products">
+                                <h3 class="products_name">DENCO</h3>
+                                <p class="mb-0">D-Super Files Gold - 0.04 Açılı 6’lı</p>
+                                <p class="mb-2">Endomotor Eğeleri</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">İndirim</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_03.png" alt="products">
+                                <h3 class="products_name">JENSEN</h3>
+                                <p class="mb-0">Spreader</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">İndirim</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_04.png" alt="products">
+                                <h3 class="products_name">RACHEL</h3>
+                                <p class="mb-0">Gutta Percha Points</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <!-- <p class="status_product green_color">Kampanya</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_05.png" alt="products">
+                                <h3 class="products_name">JENSEN</h3>
+                                <p class="mb-0">Tırnef</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <!-- <p class="status_product green_color">Kampanya</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_06.png" alt="products">
+                                <h3 class="products_name">DENTSPLY SIRONA</h3>
+                                <p class="mb-0">M-Access Kanal Eğesi</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">İndirim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section id="main_products_two">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-7">
+                <div class="right_more_products">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_01.png" alt="products">
+                                <h3 class="products_name">META BIOMED</h3>
+                                <p class="mb-0">Ceraseal Bioceramic Esasli</p>
+                                <p class="mb-2">Kanal Dolgu Patı </p>
+                                <a href="#">Giriş Yap</a>
+                                <!-- <p class="status_product green_color">Kampanya</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_02.png" alt="products">
+                                <h3 class="products_name">DENCO</h3>
+                                <p class="mb-0">D-Super Files Gold - 0.04 Açılı 6’lı</p>
+                                <p class="mb-2">Endomotor Eğeleri</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">İndirim</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_03.png" alt="products">
+                                <h3 class="products_name">JENSEN</h3>
+                                <p class="mb-0">Spreader</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">İndirim</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_04.png" alt="products">
+                                <h3 class="products_name">RACHEL</h3>
+                                <p class="mb-0">Gutta Percha Points</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <!-- <p class="status_product green_color">Kampanya</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_05.png" alt="products">
+                                <h3 class="products_name">JENSEN</h3>
+                                <p class="mb-0">Tırnef</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <!-- <p class="status_product green_color">Kampanya</p> -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/main_product_one/product_06.png" alt="products">
+                                <h3 class="products_name">DENTSPLY SIRONA</h3>
+                                <p class="mb-0">M-Access Kanal Eğesi</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">İndirim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="left_side_products position-relative">
+                    <img width="100%" src="images/main_product_one/right_side_product_image.png" alt="image">
+                    <div class="products_name_overlay">
+                        <h3>Dental <br>
+                            Cihazlar</h3>
+                        <a class="mt-5" href="#">İNCELE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+  <!-- ========== Main Product Section One Area End Here ==========  -->
+    <!-- ========== All Js Link Here ===== -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/* ========== 250px to 575.98px  */
+@media (min-width: 250px) and (max-width: 575.98px) { 
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background: #000;
+	    padding: 60px 20px 20px 20px;
+        z-index: 9999;
+        color: #fff !important;
+        width: 80% !important;
+        height: 100vh !important;
+    }
+    .top-bar {
+        display: none;
+    }
+    .manu_close {
+        display: unset;
+    }
+
+ }
