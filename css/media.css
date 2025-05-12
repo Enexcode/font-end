@@ -263,7 +263,6 @@
 	z-index: 99;
 	overflow: var(--black_color);
 	border-radius: 2px;
-	object-fit: cover;
 }
 .banner_slider_main .slick-dots {
 	display: inline-flex;
