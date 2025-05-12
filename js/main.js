@@ -25,3 +25,22 @@ $('.banner_slider_main').slick({
     dots: true,
     // pauseOnHover: false,
   });
+  $('.review_slider_main').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    dots: true,
+    prevArrow: $('.review_left_arrow'),
+    nextArrow: $('.review_right_arrow'),
+    responsive: [
+      {
+        breakpoint: 768, // tablet and below
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  

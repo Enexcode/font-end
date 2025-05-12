@@ -89,7 +89,7 @@ a{
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .desktop-header {
       display: none;
     }
@@ -329,27 +329,28 @@ a{
     opacity: unset !important;
   }
   .navbar-collapse.show {
-	flex-basis: 100%;
-	flex-grow: 1;
-	align-items: center;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	background: #000;
-	padding: 60px 20px 20px 20px;
-	z-index: 9999;
-	color: #fff !important;
-	width: 80%;
-	height: 100vh;
-}
-.manu_close {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-size: 28px;
-	cursor: pointer;
-	display: none;
-}
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    padding: 60px 20px 20px 20px;
+    z-index: 9999;
+    color: #fff !important;
+    width: 80%;
+    height: 100vh;
+  }
+  .manu_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: #000;
+  }
 .nav-link:focus, .nav-link:hover {
 	color: var(--primary_color);
 }
@@ -597,6 +598,15 @@ a{
 .status_product.green_color{
     background-color: #9EBD54;
 }
+.products_scroll_wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.products_scroll_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 /* ========== Categories, Brand, products  Css Here End ==========  */
 
 /* ========== Popular categories Css Here Start ==========  */
@@ -693,4 +703,348 @@ a{
 .right_more_products .products_card{
 	margin-bottom: 28px;
 }
+
+
+/* .right_more_products .products_card img {
+  min-height: 165px;
+  max-height: 165px;
+  max-width: 100%;
+  object-fit: contain;
+} */
+
+.products_card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.products_name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status_product {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.green_color {
+  background-color: #d4f8cc;
+  color: #146c2e;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (min-width: 992px) {
+  .right_more_products .row > div {
+      flex: 0 0 auto !important;
+      width: 33.3333% !important;
+  }
+}
 /* ========== Main Products List Css Here End ==========  */
+
+/* ==========Sponsor Area Css Here Start ==========  */
+.patner_title h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.sponsor_logo {
+    border: 0.2px solid #898989;
+    height: 96px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* more visible shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sponsor_logo img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Ensures image stays proportional */
+  }
+  .sponsor_scroll_wrapper {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .sponsor_scroll_wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+/* ==========Sponsor Area Css Here End ==========  */
+
+/* ==========Review Area Css Here Start ==========  */
+#review_area{
+    margin-top: 100px;
+}
+#review_area .my_container{
+    background-color: #80edbc57;
+    border-radius: 30px;
+    padding: 32px 0px;
+}
+.review_title h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 45px;
+}
+.review_box{
+    padding: 18px 22px;
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 10px;
+}
+.review_box i{
+    font-size: 18px;
+    color: #2D44C6;
+    margin-right: 2px;
+}
+.review_box p{
+    font-size: 10px;
+    color: #101010;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.review_box p.reviewer{
+    font-size: 10px;
+    color: #000000;
+    font-weight: 500;
+    text-align: end;
+    margin-bottom: 0px;
+}
+.review_slider_main  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.review_slider_main  .slick-dots button{
+    color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #D9D9D9;
+}
+.review_slider_main  .slick-dots li.slick-active button{
+    background-color: #000000;
+}
+.review_slider_main  .slick-dots li{
+    
+    width: 6px;
+    height: 6px;
+    margin: 0px 2px;
+    border-radius: 50px;
+}
+.review_left_arrow{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+.review_right_arrow{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+/* ==========Review Area Css Here End ==========  */
+
+/* ========== Feature Area Css Here Start ==========  */
+#feature_area {
+    background-color: #fff;
+    margin-top: 90px;
+  }
+
+  .scroll-wrapper {
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE & Edge */
+    scrollbar-width: none;     /* Firefox */
+    white-space: nowrap;
+  }
+
+  .scroll-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .feature-box {
+	background-color: #F0F0F0;
+	border-radius: 8px;
+	padding: 30px 4px;
+	text-align: center;
+	margin-right: 5px;
+	display: inline-block;
+	width: 100% !important;
+	max-width: 240px;
+	height: 250px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+	margin-right: 43px;
+}
+
+  .feature-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .feature-title {
+    font-weight: 900;
+    font-size: 14px;
+    color: #101010;
+    margin-bottom: 8px;
+    border-bottom: .5px solid #4C4C4C;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .feature-desc {
+    font-size: 11px;
+    font-weight: 500;
+    color: #4C4C4C;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  @media (min-width: 992px) {
+    .scroll-wrapper {
+      overflow: visible;
+      white-space: normal;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .feature-box {
+        width: 100%;
+        max-width: 270px;
+        margin-right: 0;
+    }
+  }
+/* ========== Feature Area Css Here End ==========  */
+
+/* ========== Footer Area Css Here Start ==========  */
+footer {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  .footer-logo {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .footer-section h6 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #777777;
+  }
+  .footer-links a {
+    display: block;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #777777;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  .footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+  }
+  .app-buttons img {
+    width: 130px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 768px) {
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  .social-icons a {
+    background-color: #4E4E4E;
+    padding: 1px 2px 0px 2px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    transition: all .3s linear;
+  }
+  .social-icons a:hover {
+    background-color: #9EBD54;
+  }
+  .social-icons a i{
+    color: #fff;
+    font-size: 16px;
+  }
+/* ========== Footer Area Css Here End ==========  */
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.bottom-nav a {
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+  color: #9ACD32;
+}
+
+.bottom-nav a.active {
+  color: #9ACD32;
+}
+
+/* Hide on large screens */
+@media (min-width: 992px) {
+  .bottom-nav {
+    display: none;
+  }
+}
